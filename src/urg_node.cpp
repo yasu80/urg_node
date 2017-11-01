@@ -32,15 +32,17 @@
  */
 
 #include "urg_node/urg_node_driver.h"
+#include <ros/console.h>
 
 int main(int argc, char **argv)
 {
   // Initialize node and nodehandles
   ros::init(argc, argv, "urg_node");
-
+  
+  
   urg_node::UrgNode node;
   node.run();
-
+  ROS_INFO("Mod.yasu edition - Robust mode");
   ros::spin();
 
   return 0;
