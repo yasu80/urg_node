@@ -1,4 +1,12 @@
 urg_node
 ===================
 
-ROS wrapper for the Hokuyo urg_c library.
+## Private Edition
+
+## Modification
+
+1. Be Robust - dont reconfigure when exceeded error count. Just Warn...
+
+
+ROS wrapper for the Hokuyo urg\_c library.
+

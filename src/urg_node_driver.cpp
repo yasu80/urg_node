@@ -552,9 +552,6 @@ void UrgNode::scanThread()
       if (error_count_ > error_limit_)
       {
         ROS_ERROR_THROTTLE(10.0, "Error count exceeded limit, reconnecting.");
-        urg_.reset();
-        ros::Duration(2.0).sleep();
-
         break;  // Return to top of main loop
       }
     }
