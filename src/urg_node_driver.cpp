@@ -551,7 +551,7 @@ void UrgNode::scanThread()
       // Reestablish conneciton if things seem to have gone wrong.
       if (error_count_ > error_limit_)
       {
-        ROS_ERROR_THROTTLE(10.0, "Error count exceeded limit, reconnecting.");
+        ROS_ERROR_THROTTLE(10.0, "Error count exceeded limit. OnGoing");
         break;  // Return to top of main loop
       }
     }
